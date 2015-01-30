@@ -1,3 +1,4 @@
+<!--
 <h2>Expense Details</h2>
 <div class="exp-details" ng-repeat="expense in expenses">
     <div class="col-sm-1">{{$index+1}} </div>
@@ -6,10 +7,7 @@
     <div class="col-sm-2">{{expense.amount| currency:"$"}} </div>
 
 </div>
-
+<br/>
+-->
 <h2>Expense Summary</h2>
-<div bar-chart data='summaryData'></div>
-<div ng-repeat="sum in summaryData">
-    <div> {{sum.category}} - {{sum.amount}}</div>
-
-</div>
+<div bar-chart data='summaryData' ></div>

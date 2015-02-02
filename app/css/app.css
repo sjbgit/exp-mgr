@@ -1,3 +1,68 @@
+#test {
+  visibility: hidden;
+}
+
+.page-slide {
+  padding: 2% ;
+  position: absolute;
+  width: 85% ;
+  min-height: 90% ;
+  opacity: 0.8;
+  background: #222;
+  border: thin solid #111;
+  margin: 0% 5% 5% ;
+}
+
+.slide-right.ng-leave{
+  left:0%;
+}
+
+.slide-right.ng-leave-active {
+  left:100%;
+}
+
+.slide-right.ng-enter {
+  left:-100%;
+}
+.slide-right.ng-enter-active {
+  left:0%;
+}
+
+.slide-left.ng-leave{
+  left:0%;
+}
+
+.slide-left.ng-leave-active {
+  left:-100%;
+}
+
+.slide-left.ng-enter {
+  left:100%;
+}
+.slide-left.ng-enter-active {
+  left:0%;
+}
+
+.page-slide.ng-enter,.page-slide.ng-leave{
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.bg-image{ -webkit-user-drag: none;}
+
+@media all and (min-width: 680px){
+  #summary,#details{
+    float:left;
+    width:49%;
+    padding: 0.25em;
+  }
+
+  #test {
+    visibility: visible;
+  }
+}
+
 body {
   font-family:'Lato', sans-serif;
   font-weight: 100;

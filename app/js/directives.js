@@ -169,6 +169,12 @@ angular.module('myApp.directives', []).
                             });
 
                     }
+
+                    $window.onresize = function() {
+                        console.log('window resize');
+                        scope.$apply(scope.drawGraph(scope.data));
+                    }
+
                     scope.drawGraph(scope.data);
 
                 },
